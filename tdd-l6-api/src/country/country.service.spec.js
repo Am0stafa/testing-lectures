@@ -3,7 +3,7 @@ const axios = require('axios');
 const countryService = require('./country.service');
 const mockCountryApiStub = require('./country.api.stub.json');
 
-jest.mock("axios");
+//jest.mock("axios");
 
 beforeEach(() => {
   jest.clearAllMocks();
