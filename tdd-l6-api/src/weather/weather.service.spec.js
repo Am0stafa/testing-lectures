@@ -10,7 +10,7 @@ beforeEach(() => {
 
 describe('Weather API', () => {
   test('Weather', async () => {
-    axios.get.mockResolvedValueOnce(mockWeatherApiStub);
+    axios.get.mockResolvedValueOnce(mockWeatherApiStub); // run at the beginning
     const location = { city: 'Istanbul', weatherCode: 'TR' };
     const results = await weatherService.getWeather(location);
     expect(results).toEqual(mockWeatherApiStub.data);
