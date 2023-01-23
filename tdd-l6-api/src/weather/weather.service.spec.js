@@ -4,8 +4,8 @@ const weatherService = require('./weather.service');
 const mockWeatherApiStub = require('./weather.api.stub.json');
 
 beforeEach(() => {
-  jest.clearAllMocks();
-  jest.resetAllMocks();
+  jest.clearAllMocks(); // clear usage data. calles made
+  jest.resetAllMocks(); // super set of clear, reset mock implementation
 });
 
 describe('Weather API', () => {
