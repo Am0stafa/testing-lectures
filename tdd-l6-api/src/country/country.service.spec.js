@@ -12,7 +12,7 @@ beforeEach(() => {
 
 describe('Country API', () => {
   test('Country', async () => {
-    axios.get.mockResolvedValueOnce(mockCountryApiStub);
+    axios.get.mockResolvedValueOnce(mockCountryApiStub); // imp
     const location = { city: 'Istanbul', countryCode: 'TR' };
     const results = await countryService.getCountryInfo(location);
     expect(results).toEqual(mockCountryApiStub.data[0]);
